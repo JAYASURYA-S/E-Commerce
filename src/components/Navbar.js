@@ -14,7 +14,7 @@ const Navbar = ({loggedIn,username,loginid,logoutsubmit}) => {
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div className="container">
           <NavLink className="navbar-brand fw-bold fs-4" to="/">
-            LATEST COLLECTION
+            LATEST COLLECTION efawefwefraewrwetwe
           </NavLink>
 
           <button
