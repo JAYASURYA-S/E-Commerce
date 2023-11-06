@@ -1,13 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { cartItem } from "../redux/reducers/cartSlice";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
   const state = useSelector(cartItem);
-
-  
-
+  const navigate = useNavigate();
   var total = 0;
   const itemList = (item) => {
     total = total + item.qty * parseInt(item.price);
@@ -24,6 +22,11 @@ const Checkout = () => {
       </li>
     );
   };
+
+  const placeorder = () => {
+    alert("Order Placed...!!!");
+    navigate("/");
+  }
 
   return (
     <>
@@ -44,6 +47,7 @@ const Checkout = () => {
                 <strong>${total}</strong>
               </li>
             </ul>
+            <button className="btn btn-primary w-100 mt-3" onClick={placeorder}>Place Order</button>
           </div>
         </div>
       </div>
