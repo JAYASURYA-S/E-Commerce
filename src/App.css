@@ -1,0 +1,15 @@
+
+.navbar-nav a{
+  font-size: 18px;
+}
+
+.loginBtn:hover .signubtn
+{
+  display: block;
+}
+
+.signubtn
+{
+  display: none;
+}
+
