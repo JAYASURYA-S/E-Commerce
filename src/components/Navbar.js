@@ -6,11 +6,7 @@ import Login from "./Login";
 import Signup from "./Signup";
 
 const Navbar = ({loggedIn,username,loginid,logoutsubmit}) => {
-  // const username = logginUser.forEach((el) =>{
-  //   return el.username
-  // })
-  // console.log(logginUser);
-  // console.log(loggedIn);
+
   const state = useSelector(cartItem);
   const {id} = useParams()
   return (
@@ -18,7 +14,7 @@ const Navbar = ({loggedIn,username,loginid,logoutsubmit}) => {
       <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div className="container">
           <NavLink className="navbar-brand fw-bold fs-4" to="/">
-            LA COLLECTION
+            LATEST COLLECTION
           </NavLink>
 
           <button
